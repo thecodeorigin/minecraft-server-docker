@@ -1,0 +1,15 @@
+version: "3"
+
+services:
+  server:
+    image: itzg/minecraft-server
+    ports:
+      - 25565:25565
+    environment:
+      EULA: "TRUE"
+      DEBUG_HELPER: true
+    tty: true
+    stdin_open: true
+    restart: always
+    volumes:
+      - ./data:/data
