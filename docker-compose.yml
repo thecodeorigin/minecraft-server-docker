@@ -7,7 +7,9 @@ services:
       - 25565:25565
     environment:
       EULA: "TRUE"
-      MEMORY: ${MEMORY:-1G}
+      MEMORY: ${MAX_MEMORY:-1G}
+      MOTD: ${MESSAGE_OF_THE_DAY:-Welcome to the server!}
+      VERSION: ${MINECRAFT_VERSION:-LATEST}
     tty: true
     stdin_open: true
     restart: always
