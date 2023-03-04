@@ -10,6 +10,7 @@ services:
       MEMORY: ${MAX_MEMORY:-1G}
       MOTD: ${MESSAGE_OF_THE_DAY:-Welcome to the server!}
       VERSION: ${MINECRAFT_VERSION:-LATEST}
+      ONLINE_MODE: ${ONLINE_MODE:-true}
     tty: true
     stdin_open: true
     restart: always
